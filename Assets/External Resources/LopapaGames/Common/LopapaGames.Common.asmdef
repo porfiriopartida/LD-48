@@ -1,0 +1,15 @@
+{
+    "name": "LopapaGames.Common",
+    "references": [
+        "GUID:5cfa285f0c6e4941852305606c6caacb"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
