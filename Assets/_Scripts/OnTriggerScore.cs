@@ -19,7 +19,7 @@ namespace _Scripts
             score.Value = 0;
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerEnter(Collider collision)
         {
             if (tagNames.Contains(collision.tag))
             {

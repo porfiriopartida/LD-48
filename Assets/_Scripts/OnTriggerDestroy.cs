@@ -11,7 +11,7 @@ namespace _Scripts
 
         public bool destroySelf;
         public bool destroyOther;
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerEnter(Collider collision)
         {
             if (tagNames.Contains(collision.tag))
             {
