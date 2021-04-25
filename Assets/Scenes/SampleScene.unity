@@ -378,18 +378,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020626301, y: 0.021737143, z: 0.29199916}
   m_Center: {x: -0.00031315145, y: 0.0004599084, z: -0.15159212}
---- !u!114 &1689923901 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6531022026455710328, guid: 903badd34163f6f4ea73efe46c8c550a,
-    type: 3}
-  m_PrefabInstance: {fileID: 8877512190579963872}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32ec457291c84f1b86652fd50514247f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1820151682 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3910971307544211132, guid: 041e535c215281247a30f87b042c681c,
@@ -1007,7 +995,7 @@ PrefabInstance:
         type: 3}
       propertyPath: characterMovementController
       value: 
-      objectReference: {fileID: 1689923901}
+      objectReference: {fileID: 3910971306606707964}
     - target: {fileID: 4001477173072346463, guid: d99f4016bd75e2d4e94392da30e7ccdc,
         type: 3}
       propertyPath: m_Name
