@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6489695276694866745}
   - component: {fileID: 5668042021283455381}
   - component: {fileID: 4900897585011717302}
-  - component: {fileID: 3021939421013832446}
   m_Layer: 10
   m_Name: Meat
   m_TagString: Meat
@@ -79,24 +78,6 @@ CapsuleCollider:
   m_Height: 0.34
   m_Direction: 1
   m_Center: {x: 0, y: 0.077064276, z: -0.002733739}
---- !u!114 &3021939421013832446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7104045826120166979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464a12e852850f545a97779e2daf2c1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreEvent: {fileID: 11400000, guid: 8fd7031ff6d82f34b9de28c2eec45f6e, type: 2}
-  score: {fileID: 11400000, guid: d6ed075bce03b1d47bc89f016756d321, type: 2}
-  tagNames:
-  - Player
-  destroySelf: 1
-  destroyOther: 0
 --- !u!1001 &3510838546535467972
 PrefabInstance:
   m_ObjectHideFlags: 0

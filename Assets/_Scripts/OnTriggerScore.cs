@@ -14,15 +14,12 @@ namespace _Scripts
 
         public bool destroySelf;
         public bool destroyOther;
-        private void Start()
-        {
-        }
-
+        public float valueUpdate;
         private void OnTriggerEnter(Collider collision)
         {
             if (tagNames.Contains(collision.tag))
             {
-                score.Value++;
+                score.Value+=valueUpdate;
                 scoreEvent.Raise();
                 if (destroyOther)
                 {
