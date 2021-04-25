@@ -16,7 +16,6 @@ namespace _Scripts
         public bool destroyOther;
         private void Start()
         {
-            score.Value = 0;
         }
 
         private void OnTriggerEnter(Collider collision)

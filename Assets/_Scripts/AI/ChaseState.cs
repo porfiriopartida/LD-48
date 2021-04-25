@@ -2,7 +2,6 @@
 {
     public class ChaseState : MyState
     {
-        public bool isPlayerClose;
         public ChaseState(MyStateMachine myStateMachine)
         {
             this.stateMachine = myStateMachine;
@@ -10,12 +9,12 @@
 
         public override MyState Update()
         {
-            if (isPlayerClose)
+            if (this.stateMachine.isPlayerNear)
             {
                 return stateMachine.AttackState;
             }
 
-            // stateMachine.CrabController.Move();
+            //this.stateMachine.CrabController.MoveTo();
             return this;
         }
     }

@@ -2,7 +2,6 @@
 {
     public class IdleState : MyState
     {
-        public bool isPlayerNear;
         
         public IdleState(MyStateMachine myStateMachine)
         {
@@ -11,14 +10,13 @@
 
         public override MyState Update()
         {
-            if (isPlayerNear)
+            if (this.stateMachine.isPlayerNear)
             {
-                // stateMachine.CrabController.Move();
                 return stateMachine.ChaseState;
             }
             else
             {
-                // stateMachine.CrabController.Dance();
+                this.stateMachine.CrabController.Dance();
                 return this;
             }
         }

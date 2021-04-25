@@ -2,6 +2,7 @@
 {
     public class MyStateMachine
     {
+        public bool isPlayerNear;
         public MyStateMachine()
         {
             ChaseState = new IdleState(this);
