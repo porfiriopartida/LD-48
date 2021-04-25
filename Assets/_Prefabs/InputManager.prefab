@@ -47,3 +47,5 @@ MonoBehaviour:
   characterMovementController: {fileID: 0}
   gameObjectPrefab: {fileID: 5979952212794347260, guid: fb61621a127f95643acb15e839b993ac,
     type: 3}
+  layerNames:
+  - FLOOR

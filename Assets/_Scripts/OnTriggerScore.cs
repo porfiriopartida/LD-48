@@ -16,10 +16,9 @@ namespace _Scripts
         public bool destroyOther;
         private void Start()
         {
-            score.Value = 0;
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerEnter(Collider collision)
         {
             if (tagNames.Contains(collision.tag))
             {

@@ -10,10 +10,9 @@ namespace _Scripts
         private Transform _myTransform;
         private Vector3 _targetPosition;
         private Vector3 _playerDirection;
-        private bool _isMoving;
+        public bool _isMoving;
         private void Start()
         {
-            // _myRigidBody = GetComponent<Rigidbody>();
             _myTransform = GetComponent<Transform>();
         }
 
@@ -35,7 +34,6 @@ namespace _Scripts
             hitPoint.y = 0;
             _targetPosition = hitPoint;
             _isMoving = true;
-            // Debug.Log($"Move From {this.transform.position} to {hitPoint}");
         }
     }
 }
