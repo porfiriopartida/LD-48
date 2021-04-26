@@ -7,7 +7,7 @@ namespace _Scripts
     public class PathFollower : MonoBehaviour
     {
         [SerializeField]
-        private PathController pathController;
+        public PathController pathController;
         public float pauseOnPoints;
         public float entitySpeed;
         public bool isLoop;

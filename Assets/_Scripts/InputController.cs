@@ -5,10 +5,10 @@ namespace _Scripts
     public class InputController : MonoBehaviour
     {
         [SerializeField]
-        private Camera ortographicCamera;
+        public Camera ortographicCamera;
         private Vector3 _touchPosWorld;
         [SerializeField]
-        private MyCharacterMovementController characterMovementController;
+        public MyCharacterMovementController characterMovementController;
         [SerializeField]
         private GameObject gameObjectPrefab;
 
@@ -43,11 +43,6 @@ namespace _Scripts
 
                 }
             }
-
-            // if (Input.GetKey(KeyCode.Escape))
-            // {
-            //     Application.Quit();
-            // }
         }
     }
 }

@@ -28,7 +28,7 @@ namespace LopapaGames.Common.Core
     public bool GetMouseButton(int button) => Input.GetMouseButton(button);
     public bool GetMouseButtonUp(int button) => Input.GetMouseButtonUp(button);
     public void ResetInputAxes() => Input.ResetInputAxes();
-    public bool IsJoystickPreconfigured(string joystickName) => Input.IsJoystickPreconfigured(joystickName);
+    // public bool IsJoystickPreconfigured(string joystickName) => Input.IsJoystickPreconfigured(joystickName);
     public string[] GetJoystickNames() => Input.GetJoystickNames();
     public Touch GetTouch(int index) => Input.GetTouch(index);
     public AccelerationEvent GetAccelerationEvent(int index) => Input.GetAccelerationEvent(index);
