@@ -14,7 +14,7 @@ namespace _Scripts
             if ("Water".Equals(collision.tag))
             {
                 MyCharacterStateController.IsOnWater = true;
-                Debug.Log("Character ENTERED water");
+                // Debug.Log("Character ENTERED water");
             }
         }
         private void OnTriggerExit(Collider collision)
@@ -22,7 +22,7 @@ namespace _Scripts
             if ("Water".Equals(collision.tag))
             {
                 MyCharacterStateController.IsOnWater = false;
-                Debug.Log("Character left water");
+                // Debug.Log("Character left water");
             }
         }
     }

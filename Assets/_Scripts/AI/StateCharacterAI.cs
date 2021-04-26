@@ -26,7 +26,7 @@ namespace _Scripts.AI
         public void Update()
         {
             Collider[] hitColliders = Physics.OverlapSphere(Target.position, meatSight, LayerMask.GetMask("Meat"));
-            Debug.Log($"Found {hitColliders.Length} meats");
+            // Debug.Log($"Found {hitColliders.Length} meats");
             if (hitColliders.Length > 0)
             {
                 crabController.MoveTo(hitColliders[0].gameObject.transform.position);

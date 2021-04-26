@@ -50,6 +50,8 @@ GameObject:
   - component: {fileID: 422705246}
   - component: {fileID: 481215608}
   - component: {fileID: 481215604}
+  - component: {fileID: 1950014425}
+  - component: {fileID: 1950014419}
   m_Layer: 0
   m_Name: MeatSpawner
   m_TagString: Untagged
@@ -86,7 +88,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Spawner: {fileID: 11400000, guid: d0ba233d9342b1345b37390305ed8514, type: 2}
   startAt: 0
-  delay: 0.25
+  delay: 0.5
   parentSelf: 0
   objectParent: {fileID: 0}
   totalSpawnCount: 0
@@ -118,8 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathController: {fileID: 11400000, guid: 22ba2afbe82e01d4389c457304a5ccdc, type: 2}
-  pauseOnPoints: 0.5
-  entitySpeed: 1
+  pauseOnPoints: 0.15
+  entitySpeed: 5
   isLoop: 0
   isRandom: 1
 --- !u!114 &481215608
@@ -148,6 +150,48 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.82104635, z: 0.5}
   m_Center: {x: 0, y: -0.16052318, z: 0}
+--- !u!114 &1950014425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297489533827086296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773de84a9acc4a54793588b75aeda349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfx:
+  - {fileID: 8300000, guid: 61d0406e525d91b419d0ebd88a93a7a7, type: 3}
+  - {fileID: 8300000, guid: 320fe8524befccc468984584f1638974, type: 3}
+--- !u!114 &1950014419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297489533827086296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53ffc429b4044a4990ae8e3fbe02b324, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 35f4e715a9c8619418d4dcba33d36659, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1950014425}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1555346560574063152
 PrefabInstance:
   m_ObjectHideFlags: 0

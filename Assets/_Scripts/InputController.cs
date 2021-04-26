@@ -42,7 +42,12 @@ namespace _Scripts
                     }
 
                 }
-            } 
+            }
+
+            // if (Input.GetKey(KeyCode.Escape))
+            // {
+            //     Application.Quit();
+            // }
         }
     }
 }
